@@ -2,7 +2,7 @@
  * @name UnShittifyNarrowWindow
  * @author Xaero252
  * @description Tweak screen space utilization on the titlebar for narrow window users
- * @version 0.0.1
+ * @version 0.0.2
  */
 
 /* -----------------  UN-SHITIFY DISCORD ------------------- *//*
@@ -14,68 +14,83 @@
  */
 
 /* Some easily accessible user-tunables. */
+
 :root {
+	--collapse-toolbox: false;
 	--toolbox-collapse-delay: 0.5s;
-	--toolbox-width: 115px;
-	--toolbox-padding: calc(var(--toolbox-width) + 15px);
-	--search-max-width: calc(25vw - (var(--toolbox-width)));
-}
+	--toolbox-width: calc( 110px + var(--spacer-padding) + var(--update-icon-padding) + var(--other-icon-padding) );
+	--update-icon-padding: 0px;
+	--other-icon-padding: 0px;
+	--spacer-padding: 0px;
+	--toolbox-padding: calc( var(--toolbox-width) + 15px );
+	--search-max-width: calc( 35vw - var(--toolbox-width) );
+  }
 
 /* You probably don't want to edit anything below here */
 @media all and (max-width: 1280px) {
-
-   /* Permanent Expansion States */
-	:root:has(.trailing_c38106 [aria-label="Update Ready!"]), :root:has(.trailing_c38106 .selected__9293f) {
-		--toolbox-width: 205px !important;
-		--toolbox-collapse-delay: 0s !important;
-   }
-
-   /* Hover Expansion */
-	:root:has(.trailing_c38106:hover) {
-		--toolbox-width: 205px;
-		--toolbox-collapse-delay: 0.5s;
-   }
-
-   /* Toolbox Container */
-	.trailing_c38106 {
-		width: var(--toolbox-width);
-		overflow: hidden;
-		transition: width 0.2s ease var(--toolbox-collapse-delay);
-		will-change: width;
-   }
-
-   /* Title Synchronization */
+	/* Permanent Expansion States */
+	:root:has(.trailing_c38106 [aria-label="Update Ready!"]) {
+	  --update-icon-padding: 40px;
+	  --spacer-padding:11px;
+	  --toolbox-collapse-delay: 0s !important;
+	}
+  
+	/* Hover Expansion */
+	:root:has(.trailing_c38106:hover), :root:has(.trailing_c38106 .selected__9293f) {
+	  --other-icon-padding: 70px;
+	  --spacer-padding: 11px;
+	  --toolbox-collapse-delay: 0.5s;
+	}
+  
+	/* Toolbox Container */
+	.trailing_c38106:has(.winButtonsWithDivider_c38106) {
+	  width: var(--toolbox-width);
+	  overflow: hidden;
+	  transition: width 0.2s ease var(--toolbox-collapse-delay);
+	  will-change: width;
+	}
+  
+	.trailing_c38106:not(:hover) > :not(.winButtons_c38106):not([aria-label="Update Ready!"]) {
+	  display: none;
+	  transition-behavior: allow-discrete !important;
+	  transition: all 0.5s;
+	}
+	
+	:root:has(.trailing_c38106:hover) .trailing_c38106 > :not(.winButtons_c38106):not([aria-label="Update Ready!"]),
+	.trailing_c38106:has(.selected__9293f) > :not(.winButtons_c38106):not([aria-label="Update Ready!"]) {
+	  display: initial;
+	}
+  
+	/* Title Synchronization */
 	.title_f75fb0 {
-		padding-right: var(--toolbox-padding) !important;
-		transition: padding-right 0.2s ease var(--toolbox-collapse-delay);
-   }
-
-   /* Search Bar Animation Sync */
+	  padding-right: var(--toolbox-padding) !important;
+	  transition: padding-right 0.2s ease var(--toolbox-collapse-delay);
+	}
+  
+	/* Search Bar Animation Sync */
 	.public-DraftEditor-content {
-		min-width: 5vw;
-		max-width: var(--search-max-width);
-		transition: max-width 0.2s ease var(--toolbox-collapse-delay);
-   }
-
-   /* Immediate Response for Special States */
-	:root:has(.trailing_c38106 [aria-label="Update Ready!"]) .title_f75fb0, :root:has(.trailing_c38106 .selected__9293f) .title_f75fb0 {
-		transition: padding-right 0.2s ease 0s !important;
-   }
-
-	:root:has(.trailing_c38106 [aria-label="Update Ready!"]) .public-DraftEditor-content, :root:has(.trailing_c38106 .selected__9293f) .public-DraftEditor-content {
-		transition: max-width 0.2s ease 0s !important;
-   }
-
-   /* Combined States */
-	:root:has(.trailing_c38106 .selected__9293f):has(.trailing_c38106:hover), :root:has(.trailing_c38106 [aria-label="Update Ready!"]):has(.trailing_c38106:hover) {
-		--toolbox-width: 205px !important;
-   }
-
-   /* Delayed Closing */
-	.trailing_c38106:not(:hover):not(:has([aria-label="Update Ready!"])):not(:has(.selected__9293f)) {
-		--toolbox-collapse-delay: 0.5s;
-   }
-}
+	  min-width: 5vw;
+	  max-width: var(--search-max-width);
+	  transition: max-width 0.2s ease var(--toolbox-collapse-delay);
+	}
+  
+	/* Immediate Response for Special States */
+	:root:has(.trailing_c38106 [aria-label="Update Ready!"]) .title_f75fb0,
+	:root:has(.trailing_c38106 .selected__9293f) .title_f75fb0 {
+	  transition: padding-right 0.2s ease 0s !important;
+	}
+  
+	:root:has(.trailing_c38106 [aria-label="Update Ready!"]) .public-DraftEditor-content,
+	:root:has(.trailing_c38106 .selected__9293f) .public-DraftEditor-content {
+	  transition: max-width 0.2s ease 0s !important;
+	}
+  
+	/* Delayed Closing */
+	.trailing_c38106:has(.winButtonsWithDivider_c38106):not(:hover):not(:has([aria-label="Update Ready!"])):not(:has(.selected__9293f)) {
+	  --toolbox-collapse-delay: 0.5s;
+	}
+  
+  }
 
 /* Search Bar Rules */
 .public-DraftEditor-content:not(:focus) {
