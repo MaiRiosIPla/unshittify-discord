@@ -5,7 +5,7 @@ A personal project to fix the design mistakes and disalignments in the Discord a
 If it's unreadable, it's by design, I didn't want you to steal my secret sauce.
 
 **Disclaimer:** This is a discord unoficcial theme, it is not affiliated with Discord in any way.
-If you are discord and wish for this to be taken down, please message me at mairiosipla@proton.me
+If you are discord and wish for this to be taken down, please message me at hello@nak.kiwi
 
 - [Installation](#installation)
 - [Use to Create Other Themes](#use-to-create-other-themes)
