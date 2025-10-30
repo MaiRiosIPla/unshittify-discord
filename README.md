@@ -23,8 +23,6 @@ If you are discord and wish for this to be taken down, please message me at hell
 
 Download [UnShittify.theme.css](UnShittify.theme.css) or [UnShittifyRounded.theme.css](UnShittifyRounded.theme.css) and add it to your themes folder.
 
-You can also find it on ~~[BetterDiscord](https://betterdiscord.app/theme/TODO)~~ (Waiting for verification)
-
 > You won't need both themes for rounded icons.
 
 ### Option 2: Online Themes (Auto Update, no settings available)
@@ -45,6 +43,8 @@ And the following for rounded icons:
 > You'll need both themes for rounded icons.
 
 ### Option 3 (For Bowsers using UserCSS extensions)
+
+>There are extra options: RoundIcons and RefreshedSeamlessChatBar Toggles.
 
 Check out [https://userstyles.world/style/21817](https://userstyles.world/style/21817)
 
