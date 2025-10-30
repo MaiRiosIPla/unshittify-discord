@@ -51,6 +51,9 @@ If you are discord and wish for this to be taken down, please message me at hell
 	width: calc(100% - var(--space-xs) * 2 - var(--custom-guild-list-width));
 	z-index: 200 !important;
 }
+.wrapper_ef3116{
+    margin-bottom: 0;
+}
 
 /* Remove top row*/
 .visual-refresh .base_c48ade {
