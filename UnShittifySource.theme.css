@@ -44,7 +44,7 @@ If you are discord and wish for this to be taken down, please message me at hell
 }
 
 /* User modal */
-.visual-refresh .panels__5e434 {
+.visual-refresh .panels_c48ade, .visual-refresh .panels__5e434 {
 	right: var(--space-xs) !important;
 	left: auto;
 	bottom: var(--space-xs);
@@ -53,7 +53,7 @@ If you are discord and wish for this to be taken down, please message me at hell
 }
 
 /* Remove top row*/
-.visual-refresh .base__5e434 {
+.visual-refresh .base_c48ade, .visual-refresh .base__5e434 {
 	grid-template-rows: [top] 0 [titleBarEnd] min-content [noticeEnd] 1fr [end];
 }
 
@@ -140,7 +140,7 @@ If you are discord and wish for this to be taken down, please message me at hell
 .itemsContainer_ef3116, .tree_ef3116 {
 	height: calc(100% - 1rem);
 }
-.visual-refresh .wrapper_ef3116 {
+.visual-refresh .guilds_c48ade, .visual-refresh .wrapper_ef3116 {
 	margin-bottom: 0;
 }
 /* _____ Server icons scale _____________________________________________________*/
