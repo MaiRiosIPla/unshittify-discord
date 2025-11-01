@@ -53,7 +53,7 @@ If you are discord and wish for this to be taken down, please message me at hell
 }
 
 /* Remove top row*/
-.visual-refresh .base_c48ade {
+.visual-refresh .base__5e434 {
 	grid-template-rows: [top] 0 [titleBarEnd] min-content [noticeEnd] 1fr [end];
 }
 
@@ -70,7 +70,7 @@ If you are discord and wish for this to be taken down, please message me at hell
 
 	background-color: var(--background-tertiary);
 	border-radius: var(--radius-sm);
-	top: 6px;
+	top: 9px;
 	right: var(--space-xs);
 	left: unset;
 	padding: 0;
