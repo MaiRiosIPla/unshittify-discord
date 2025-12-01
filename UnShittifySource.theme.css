@@ -43,6 +43,11 @@ If you are discord and wish for this to be taken down, please message me at hell
 	--rscb-no-jump-chat: 0;
 }
 
+/* Alert message */
+#bd-notices{
+    z-index: 10000;
+}
+
 /* User modal */
 .visual-refresh .panels_c48ade, .visual-refresh .panels__5e434 {
 	right: var(--space-xs) !important;
@@ -52,7 +57,7 @@ If you are discord and wish for this to be taken down, please message me at hell
 	z-index: 200 !important;
 }
 
-/* Remove top row*/
+/* Remove top row */
 .visual-refresh .base_c48ade, .visual-refresh .base__5e434 {
 	grid-template-rows: [top] 0 [titleBarEnd] min-content [noticeEnd] 1fr [end];
 }
