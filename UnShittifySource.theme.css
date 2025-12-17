@@ -132,13 +132,18 @@ If you are discord and wish for this to be taken down, please message me at hell
 }
 
 /* Fix for search bar */
-.search__49676 > div {
+.search__49676 > div,
+._974928fe84ca9647-focused > div {
 	display: flex !important;
 	flex-shrink: 1 !important;
 }
-.searchBar__97492 {
+.searchBar__97492,
+._974928fe84ca9647-searchBar {
 	width: auto !important;
 	min-width: 100px !important;
+}
+._496769951eb140fe-search{
+    margin-right: 10px;
 }
 
 /* Fix for user modal rescaling */
