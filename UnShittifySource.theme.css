@@ -160,6 +160,11 @@ If you are discord and wish for this to be taken down, please message me at hell
 .visual-refresh .guilds_c48ade, .visual-refresh .wrapper_ef3116 {
 	margin-bottom: 0;
 }
+
+/* Hides second nav btns panel when settings menu is open */
+.c38106a3f0c3ca76-systemBar{
+    display: none !important;
+}
 /* _____ Server icons scale _____________________________________________________*/
 
 /* FOLDER SCALING */
