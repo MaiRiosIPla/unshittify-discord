@@ -44,7 +44,9 @@ If you are discord and wish for this to be taken down, please message me at hell
 }
 
 /* User modal */
-.visual-refresh .panels_c48ade, .visual-refresh .panels__5e434 {
+.visual-refresh .panels_c48ade,
+.visual-refresh .panels__5e434,
+.visual-refresh ._5e434347c823b592-panels{
 	right: var(--space-xs) !important;
 	left: auto;
 	bottom: var(--space-xs);
