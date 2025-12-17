@@ -115,7 +115,8 @@ If you are discord and wish for this to be taken down, please message me at hell
 
 
 /* Align discord logo and left bar */
-.tree_ef3116 {
+.tree_ef3116,
+._1f388bcaa446c0c8-tutorialContainer {
 	margin-top: 1rem;
 }
 
@@ -146,7 +147,9 @@ If you are discord and wish for this to be taken down, please message me at hell
 }
 
 /* Fix for server bar overflowing */
-.itemsContainer_ef3116, .tree_ef3116 {
+.itemsContainer_ef3116, 
+.tree_ef3116,
+.ef3116c2da186559-wrapper {
 	height: calc(100% - 1rem);
 }
 .visual-refresh .guilds_c48ade, .visual-refresh .wrapper_ef3116 {
