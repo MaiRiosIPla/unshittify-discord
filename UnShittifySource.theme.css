@@ -54,14 +54,17 @@ If you are discord and wish for this to be taken down, please message me at hell
 	z-index: 200 !important;
 }
 
-/* Remove top row*/
-.visual-refresh .base_c48ade, .visual-refresh .base__5e434 {
+/* Remove top row */
+.visual-refresh .base_c48ade,
+.visual-refresh .base__5e434,
+.visual-refresh ._5e434347c823b592-base{
 	grid-template-rows: [top] 0 [titleBarEnd] min-content [noticeEnd] 1fr [end];
 }
 
 
 /* Top bar and dragging functionality */
-.trailing_c38106 {
+.trailing_c38106,
+.c38106a3f0c3ca76-trailing {
 	gap: 2px;
 
 	/* margin-left: calc(var(--custom-guild-list-width) + var(--space-8)); */
@@ -78,7 +81,8 @@ If you are discord and wish for this to be taken down, please message me at hell
 	padding: 0;
 	overflow: hidden;
 }
-.bar_c38106::before {
+.bar_c38106::before,
+._5e434347c823b592-base .c38106a3f0c3ca76-bar::before {
 	content: "";
 	position: fixed;
 	top:0;
@@ -88,7 +92,8 @@ If you are discord and wish for this to be taken down, please message me at hell
 	width: 200%;
 	z-index: -1 !important;
 }
-.bar_c38106 {
+.bar_c38106,
+._5e434347c823b592-base .c38106a3f0c3ca76-bar {
 	margin-left: var(--custom-guild-sidebar-width);
 	height: 15px;
 	min-height: unset !important;
@@ -96,14 +101,16 @@ If you are discord and wish for this to be taken down, please message me at hell
 
 /* Hide bar title */
 .title__85643,
-.title_c38106 {
+.title_c38106,
+.c38106a3f0c3ca76-title {
 	display: none !important;
 }
 
 /* Make top icons not overlap bar icons*/
-.container__9293f {
+.container__9293f,
+._9293f6b2fc12398a-upperContainer {
 	padding-right: var(--top-bar-padding) !important;
-	overflow: hidden !important;
+	/* overflow: hidden !important; */
 }
 
 
