@@ -30,13 +30,13 @@ Download [UnShittify.theme.css](UnShittify.theme.css) or [UnShittifyRounded.them
 Add the following line to your "Online Themes" imports:
 
 ```css
-@import url("https://mairiosipla.github.io/unshittify-discord/UnShittifySource.theme.css");
+https://mairiosipla.github.io/unshittify-discord/UnShittifySource.theme.css
 ```
 
 And the following for rounded icons:
 
 ```css
-@import url("https://mairiosipla.github.io/unshittify-discord/RoundIconsSource.theme.css");
+https://mairiosipla.github.io/unshittify-discord/RoundIconsSource.theme.css
 ```
 
 > [!NOTE]  
@@ -141,6 +141,8 @@ If using [Installation](#installation) methods 1 or 4, you can change the follow
 
 As long as you run the code through Prettier and use tabs instead of spaces, you're good to go. 😄
 Just open a pull request.
+
+Discord will sometimes change classes between versions, to keep old clients supported adding classes is preferred (instead of replacing them).
 
 ---
 
