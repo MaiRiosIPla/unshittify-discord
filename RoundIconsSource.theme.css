@@ -30,9 +30,11 @@ If you are discord and wish for this to be taken down, please message me at hell
 .folder__48112, 
 .blobContainer_e5445c:not(.selected_e5445c) .wrapper__6e9f8, /* Servers */
 .circleIconButton__5bc7e, /* End buttons */
-.cc5dd25190031396-wrapper foreignObject /* All btns after 2025-12-15 update */
+._918165dab2b1e10b-listItemWrapper:not(._918165dab2b1e10b-selected) ._6e9f8dce4cc18de3-wrapper, /* DC logo after 2025-12-15 update */
+.e5445cbd3ad226f2-blobContainer:not(.e5445cbd3ad226f2-selected) ._6e9f8dce4cc18de3-wrapper, /* Servers after 2025-12-15 update */
+._48112cbe77dc5022-folderGroup ._48112cbe77dc5022-folderButtonInner, /* Folders after 2025-12-15 update */
+._918165dab2b1e10b-listItemWrapper ._5bc7ed9d4097f6b5-circleIconButton /* End buttons after 2025-12-15 update */
 {
 	border-radius: 100% !important;
 	overflow: hidden !important;
 }
-
