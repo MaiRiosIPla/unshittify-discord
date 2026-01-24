@@ -44,8 +44,8 @@ If you are discord and wish for this to be taken down, please message me at hell
 }
 
 /* User modal */
-.visual-refresh .panels_c48ade,
-.visual-refresh .panels__5e434,
+.visual-refresh ._5e434347c823b592-panels,
+.visual-refresh ._5e434347c823b592-panels,
 .visual-refresh ._5e434347c823b592-panels{
 	right: var(--space-xs) !important;
 	left: auto;
@@ -55,15 +55,15 @@ If you are discord and wish for this to be taken down, please message me at hell
 }
 
 /* Remove top row */
-.visual-refresh .base_c48ade,
-.visual-refresh .base__5e434,
+.visual-refresh ._5e434347c823b592-base,
+.visual-refresh ._5e434347c823b592-base,
 .visual-refresh ._5e434347c823b592-base{
 	grid-template-rows: [top] 0 [titleBarEnd] min-content [noticeEnd] 1fr [end];
 }
 
 
 /* Top bar and dragging functionality */
-.trailing_c38106,
+.c38106a3f0c3ca76-trailing,
 .c38106a3f0c3ca76-trailing {
 	gap: 2px;
 
@@ -81,7 +81,7 @@ If you are discord and wish for this to be taken down, please message me at hell
 	padding: 0;
 	overflow: hidden;
 }
-.bar_c38106::before,
+.c38106a3f0c3ca76-bar::before,
 ._5e434347c823b592-base .c38106a3f0c3ca76-bar::before {
 	content: "";
 	position: fixed;
@@ -92,7 +92,7 @@ If you are discord and wish for this to be taken down, please message me at hell
 	width: 200%;
 	z-index: -1 !important;
 }
-.bar_c38106,
+.c38106a3f0c3ca76-bar,
 ._5e434347c823b592-base .c38106a3f0c3ca76-bar {
 	margin-left: var(--custom-guild-sidebar-width);
 	height: 20px;
@@ -101,13 +101,13 @@ If you are discord and wish for this to be taken down, please message me at hell
 
 /* Hide bar title */
 .title__85643,
-.title_c38106,
+.c38106a3f0c3ca76-title,
 .c38106a3f0c3ca76-title {
 	display: none !important;
 }
 
 /* Make top icons not overlap bar icons*/
-.container__9293f,
+._9293f6b2fc12398a-container,
 ._9293f6b2fc12398a-upperContainer {
 	padding-right: var(--top-bar-padding) !important;
 	/* overflow: hidden !important; */
@@ -115,15 +115,15 @@ If you are discord and wish for this to be taken down, please message me at hell
 
 
 /* Align discord logo and left bar */
-.tree_ef3116,
+.ef3116c2da186559-tree,
 ._1f388bcaa446c0c8-tutorialContainer {
 	margin-top: 1rem;
 }
 
 /* Chat input bar */
-.channelTextArea_f75fb0   {
+.f75fb00fb7356cbe-channelTextArea   {
 	margin-bottom: var(--space-xs);
-	.inner__74017 {
+	._740174f3d6a2c8fe-inner {
 		--custom-channel-textarea-text-area-max-height: 56px;
 		--custom-channel-textarea-text-area-height: var(
 			--custom-channel-textarea-text-area-max-height
@@ -132,13 +132,13 @@ If you are discord and wish for this to be taken down, please message me at hell
 }
 
 /* Fix for search bar */
-.search__49676 > div,
-._974928fe84ca9647-focused > div {
+._496769951eb140fe-search > div,
+.c322aadb96ff59c9-focused > div {
 	display: flex !important;
 	flex-shrink: 1 !important;
 }
-.searchBar__97492,
-._974928fe84ca9647-searchBar {
+.c322aadb96ff59c9-searchBar,
+.c322aadb96ff59c9-searchBar {
 	width: auto !important;
 	min-width: 100px !important;
 }
@@ -147,17 +147,17 @@ If you are discord and wish for this to be taken down, please message me at hell
 }
 
 /* Fix for user modal rescaling */
-.actionButtons_e131a9 .button__201d5 {
+.e131a99484292a19-actionButtons ._201d5e8a3c09670a-button {
 	padding: unset !important;
 }
 
 /* Fix for server bar overflowing */
-.itemsContainer_ef3116, 
-.tree_ef3116,
+.ef3116c2da186559-itemsContainer, 
+.ef3116c2da186559-tree,
 .ef3116c2da186559-wrapper {
 	height: calc(100% - 1rem);
 }
-.visual-refresh .guilds_c48ade, .visual-refresh .wrapper_ef3116 {
+.visual-refresh ._5e434347c823b592-guilds, .visual-refresh .ef3116c2da186559-wrapper {
 	margin-bottom: 0;
 }
 
@@ -168,43 +168,43 @@ If you are discord and wish for this to be taken down, please message me at hell
 /* _____ Server icons scale _____________________________________________________*/
 
 /* FOLDER SCALING */
-.wrapper__48112 {
+._48112cbe77dc5022-folderGroup {
 	--guildbar-folder-size: calc(48px / var(--icon-scale));
 	--custom-guild-list-width: calc((var(--guildbar-avatar-size) + var(--custom-guild-list-padding)*2)/var(--icon-scale));
 	zoom: var(--icon-scale);
 }
 /* Open folder Icon */
-.folder__48112, .folderIconWrapper__48112 {
+.b18fe29d6fe8dd82-hiddenVisually, ._48112cbe77dc5022-folderPreviewWrapper {
     height: calc(var(--guildbar-folder-size) * var(--icon-scale));
     width: calc(var(--guildbar-folder-size) * var(--icon-scale));
 }
 /* Folder BG */
-.visual-refresh .expandedFolderBackground__48112 {
+.visual-refresh ._48112cbe77dc5022-folderGroupBackground {
     left: calc(var(--custom-guild-list-padding)/var(--icon-scale) - (var(--guildbar-folder-size)* var(--icon-scale) - var(--guildbar-avatar-size)/var(--icon-scale))/2);
 	width: calc(var(--guildbar-folder-size) * var(--icon-scale));
 }
 /* Closed folders inner preview*/
-.visual-refresh .closedFolderIconWrapper__48112 {
+.visual-refresh ._48112cbe77dc5022-folderPreview {
 	zoom: var(--icon-scale);
 }
 /* DC logo */
-.tutorialContainer__1f388 > .listItem__650eb > .listItemWrapper__91816, .tutorialContainer__650eb > .listItem__650eb > .listItemWrapper__91816 {
+._1f388bcaa446c0c8-tutorialContainer > ._650eb104245d257b-listItem > ._918165dab2b1e10b-listItemWrapper, ._650eb104245d257b-tutorialContainer > ._650eb104245d257b-listItem > ._918165dab2b1e10b-listItemWrapper {
 	zoom: var(--icon-scale);
 }
-#app-mount > div.appAsidePanelWrapper_a3002d > div.notAppAsidePanel_a3002d > div.app_a3002d > div > div.layers__960e4.layers__160d8 > div > div > div > div.content_c48ade > div.sidebar_c48ade > nav > ul > div.itemsContainer_ef3116 > div > div:nth-child(5) > div.listItemWrapper__91816 > div {
+#app-mount > div.a3002d7de5be5280-appAsidePanelWrapper > div.a3002d7de5be5280-notAppAsidePanel > div.a3002d7de5be5280-app > div > div._960e4207cea8323e-layers._160d8e55254637e5-layers > div > div > div > div._5e434347c823b592-content > div._5e434347c823b592-sidebar > nav > ul > div.ef3116c2da186559-itemsContainer > div > div:nth-child(5) > div._918165dab2b1e10b-listItemWrapper > div {
 	zoom: var(--icon-scale);
 }
 
 /* SERVER SCALING */
-.stack_dbd263[aria-label="Servers"] > .listItem__650eb > div:nth-child(2) .wrapper_cc5dd2 {
+.dbd2630aec71879b-stack[aria-label="Servers"] > ._650eb104245d257b-listItem > div:nth-child(2) .cc5dd25190031396-wrapper {
 	zoom: var(--icon-scale);
 }
-.visual-refresh .listItem__650eb .wrapper_cc5dd2:not(.wrapper__48112) {
+.visual-refresh ._650eb104245d257b-listItem .cc5dd25190031396-wrapper:not(._48112cbe77dc5022-folderGroup) {
 
 }
 
 /* HIDE USERNAMES (FOR DEV SNAPSHOTS) */
-/* .username__0a06e, .overflow__82b15 {
+/* ._0a06ed6ea040aa1b-username, .b0dfc2ed9c57037d-overflow {
 	filter: blur(3px);
 } */
 
