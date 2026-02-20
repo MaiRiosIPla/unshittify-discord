@@ -30,13 +30,13 @@ Download [UnShittify.theme.css](UnShittify.theme.css) or [UnShittifyRounded.them
 Add the following line to your "Online Themes" imports:
 
 ```css
-https://mairiosipla.github.io/unshittify-discord/UnShittifySource.theme.css
+https://nak.kiwi/unshittify-discord/UnShittifySource.theme.css
 ```
 
 And the following for rounded icons:
 
 ```css
-https://mairiosipla.github.io/unshittify-discord/RoundIconsSource.theme.css
+https://nak.kiwi/unshittify-discord/RoundIconsSource.theme.css
 ```
 
 > [!NOTE]  
